@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block content %}
+    <div class="row">
+        <div class="col-md-12">
+            <br>
+            <button class="btn btn-danger btn-sm" id="delete">Reset data</button>
+            <br><br><div id="map"></div>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="list-group list-unstyled">
+                {% for object in object_list %}
+                    <li>{{ object.address }}</li>
+                {% empty %}
+                    <span id="no-result">There is not addresses</span>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+{% endblock %}
