@@ -14,12 +14,12 @@ AJAX request and init the map.
 # How to execute it
 
 ```
-$ git clone https://github.com/guialante/shp.git          
-$ virtualenv .ve
-$ .ve\scripts\activate
-$ pip install -r requirements/base.txt
-$ ./manage.py migrate
-$ ./manage.py runserver
+    $ git clone https://github.com/guialante/shp.git          
+    $ virtualenv .ve
+    $ .ve\scripts\activate
+    $ pip install -r requirements/base.txt
+    $ ./manage.py migrate
+    $ ./manage.py runserver
 ```
 
 ## Running Tests
