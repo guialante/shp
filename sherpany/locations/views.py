@@ -50,7 +50,6 @@ class SaveLocationAjaxView(FusionTablesMixin, views.JSONResponseMixin, views.Aja
     """
         This view is in charge of create addresses on the database and the fusion table as well
     """
-    
     require_json = True
 
     def post_ajax(self, request, *args, **kwargs):
