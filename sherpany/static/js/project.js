@@ -50,7 +50,6 @@ $( document ).ready(function() {
         fullscreenControl: false,
         streetViewControl: false,
         click: function (event) {
-            alert('trying to create point');
             geocoder.geocode({'location': event.latLng}, function(results, status) {
                 if (status === 'OK') {
                     var result = results[0];
